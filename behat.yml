@@ -1,0 +1,17 @@
+default:
+  environment:
+    parameters:
+      start_url: http://minkdemo.devmcn.com/
+      browser: chrome
+  paths:
+    features:               %%BEHAT_CONFIG_PATH%%/features
+  formatter:
+    name:                   progress
+
+imports:
+  - mink/behat.yml
+pretty:
+  formatter:
+    name:                   pretty
+    parameters:
+      multiline_arguments:  false
